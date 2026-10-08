@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://japan-unfolded.yujishimizu.chatgpt.site/sitemap.xml
