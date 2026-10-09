@@ -13,6 +13,8 @@ The homepage must also expose Yuji, TikTok LIVE and DraMap through the shared co
 
 At 1366×768, the article rail must show Yuji's image, identity, both promises, **WATCH LIVE JAPAN** and the complete **GET DRAMAP FOR IOS** label without scrolling. Reduce image height, copy or spacing before allowing either action to fall below the viewport. Verify the homepage and new article at 1366×768, at 1440×900 or larger, and at 390×844. Confirm there is no horizontal scrolling.
 
+The desktop rail must sit against the browser edge, outside the article's readable measure, with a visible gutter between card and text. If the viewport cannot fit the article, gutter and full 205px card together, switch to the mobile bar early; never let the desktop card cover copy.
+
 Hero and story images need explicit responsive heights, `object-fit` and intentional `object-position` values. Mobile content order and image dimensions must protect the primary story CTA. Preserve Japan Unfolded's own visual identity rather than copying Japan Daily Brief.
 
 Travel and seasonal features must state the practical trade-offs, not only the visual appeal: crowd peaks, weather hazards, transport or holiday constraints, and the date on which operational details were checked. Use actual destination photography with visible creator, source and license credits; every named season or major experience needs a representative visual. Canonical, Open Graph, sitemap and robots URLs must use the current production domain. External sources and promotional links open in a new tab with `rel="noopener noreferrer"`.
