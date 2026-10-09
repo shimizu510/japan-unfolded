@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://shimizu510.github.io/japan-unfolded/sitemap.xml
+Sitemap: https://japan-unfolded.yujishimizu.chatgpt.site/sitemap.xml
