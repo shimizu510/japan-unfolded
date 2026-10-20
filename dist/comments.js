@@ -12,7 +12,7 @@
   const section = document.createElement('section');
   section.className = 'reader-discussion';
   section.setAttribute('aria-labelledby', 'reader-discussion-title');
-  section.innerHTML = '<div class="comment-heading"><h2 id="reader-discussion-title">Reader comments</h2><span>English only · no account</span></div><div class="comment-list" aria-live="polite"><p class="comment-loading">Loading comments…</p></div><form class="comment-form"><label class="sr-only" for="reader-comment-input">Comment in English</label><input id="reader-comment-input" name="body" maxlength="500" minlength="2" required autocomplete="off" placeholder="Comment…" aria-describedby="comment-hint"><input class="comment-trap" name="website" tabindex="-1" autocomplete="off" aria-hidden="true"><button type="submit" aria-label="Send comment">↑</button><p id="comment-hint" class="comment-hint">Press Enter to post anonymously</p><p class="comment-status" role="status"></p></form>';
+  section.innerHTML = '<div class="comment-heading"><h2 id="reader-discussion-title">Reader comments</h2><span>Any language · no account</span></div><div class="comment-list" aria-live="polite"><p class="comment-loading">Loading comments…</p></div><form class="comment-form"><label class="sr-only" for="reader-comment-input">Comment</label><input id="reader-comment-input" name="body" maxlength="500" minlength="2" required autocomplete="off" placeholder="Comment…" aria-describedby="comment-hint"><input class="comment-trap" name="website" tabindex="-1" autocomplete="off" aria-hidden="true"><button type="submit" aria-label="Send comment">↑</button><p id="comment-hint" class="comment-hint">Press Enter to post anonymously</p><p class="comment-status" role="status"></p></form>';
 
   const sourceBox = article.querySelector('.source-box, .sources');
   if (sourceBox) article.insertBefore(section, sourceBox);
@@ -96,7 +96,6 @@
       const response = await fetch(endpoint, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ action: 'post', article: slug, body: body, website: form.elements.website.value }) });
       const result = await response.json().catch(function () { return {}; });
       if (response.status === 429) throw new Error('Please wait a moment, then try again.');
-      if (result.error === 'english_only') throw new Error('Please write your comment in English.');
       if (!response.ok) throw new Error('Could not post. Please try again.');
       form.reset();
       status.textContent = '';
