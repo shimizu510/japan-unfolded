@@ -2,7 +2,8 @@
   'use strict';
 
   const comments = document.createElement('script');
-  comments.src = '/japan-unfolded/comments.js?v=1';
+  const siteRoot = location.pathname.includes('/japan-daily-brief/') ? '/japan-daily-brief' : '/japan-unfolded';
+  comments.src = siteRoot + '/comments.js?v=2';
   comments.defer = true;
   document.head.appendChild(comments);
 
