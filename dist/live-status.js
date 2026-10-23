@@ -3,9 +3,40 @@
 
   const comments = document.createElement('script');
   const siteRoot = location.pathname.includes('/japan-daily-brief/') ? '/japan-daily-brief' : '/japan-unfolded';
+  const assetRoot = /^(localhost|127\.0\.0\.1)$/.test(location.hostname) ? '' : siteRoot;
+  const searchStyles = document.createElement('link');
+  searchStyles.rel = 'stylesheet';
+  searchStyles.href = assetRoot + '/search.css?v=1';
+  document.head.appendChild(searchStyles);
   comments.src = siteRoot + '/comments.js?v=2';
   comments.defer = true;
   document.head.appendChild(comments);
+
+  function installSiteSearch() {
+    const header = document.querySelector('header');
+    if (!header) return;
+    const search = document.createElement('section');
+    search.className = 'site-search';
+    search.setAttribute('aria-label', 'Search this site');
+    search.innerHTML = '<form class="site-search-form"><label for="site-search-input">Search every story</label><div><input id="site-search-input" type="search" minlength="2" placeholder="Try: anime, travel, Tokyo…" autocomplete="off"><button type="submit">Search</button></div><p>Searches titles and article text—not only exact headlines.</p></form><div class="site-search-panel" hidden><div class="site-search-status" aria-live="polite"></div><ol class="site-search-results"></ol></div>';
+    header.insertAdjacentElement('afterend', search);
+    const form = search.querySelector('form'), input = search.querySelector('input'), panel = search.querySelector('.site-search-panel'), status = search.querySelector('.site-search-status'), results = search.querySelector('.site-search-results');
+    let pagesPromise;
+    function loadPages() { if (pagesPromise) return pagesPromise; status.textContent = 'Reading the archive…'; pagesPromise = fetch(assetRoot + '/sitemap.xml').then(r => r.text()).then(xml => Promise.all(Array.from(new DOMParser().parseFromString(xml, 'application/xml').querySelectorAll('loc')).map(n => n.textContent).filter(url => /\.html$/.test(url) && !/(about|google)/.test(url)).map(url => { const target = /^(localhost|127\.0\.0\.1)$/.test(location.hostname) ? new URL(url).pathname.split('/').pop() : url; return fetch(target).then(r => r.text()).then(html => { const doc = new DOMParser().parseFromString(html, 'text/html'); doc.querySelectorAll('nav,footer,aside,script,style,.mobile-brand-bar').forEach(n => n.remove()); return {url:target, title:(doc.querySelector('h1') || doc.querySelector('title')).textContent.trim(), description:(doc.querySelector('meta[name="description"]') || {}).content || '', text:(doc.querySelector('main') || doc.body).textContent.replace(/\s+/g,' ').trim()}; }).catch(() => null); }))).then(items => items.filter(Boolean)); return pagesPromise; }
+    function snippet(text, terms) { const lower=text.toLowerCase(); let at=lower.length; terms.forEach(t=>{const i=lower.indexOf(t);if(i>=0&&i<at)at=i;}); if(at===lower.length)at=0; return (at>70?'…':'')+text.slice(Math.max(0,at-70),at+190).trim()+(at+190<text.length?'…':''); }
+    async function runSearch(query) { const terms=query.toLowerCase().trim().split(/\s+/).filter(t=>t.length>1); panel.hidden=false; results.innerHTML=''; if(!terms.length){status.textContent='Enter at least two letters.';return;} const pages=await loadPages(); const ranked=pages.map(page=>{const title=page.title.toLowerCase(),desc=page.description.toLowerCase(),body=page.text.toLowerCase();let score=0;terms.forEach(t=>{if(title.includes(t))score+=60;if(desc.includes(t))score+=24;score+=Math.min(20,body.split(t).length-1);});if(body.includes(terms.join(' ')))score+=25;return{page,score};}).filter(x=>x.score>0).sort((a,b)=>b.score-a.score).slice(0,8);status.textContent=ranked.length?ranked.length+' likely match'+(ranked.length===1?'':'es'):'No matching stories found.';ranked.forEach(({page})=>{const li=document.createElement('li');li.innerHTML='<a></a><p></p>';li.querySelector('a').href=page.url;li.querySelector('a').textContent=page.title;li.querySelector('p').textContent=snippet(page.text,terms);results.appendChild(li);}); }
+    form.addEventListener('submit',e=>{e.preventDefault();runSearch(input.value);});
+  }
+
+  function addHomepageArchiveStories() {
+    if (!/(?:\/japan-unfolded)?\/(?:index\.html)?$/.test(location.pathname)) return;
+    const grid = document.querySelector('#stories .grid3');
+    if (!grid) return;
+    grid.insertAdjacentHTML('afterend','<section class="home-more-stories"><div class="home-more-heading"><div><span class="eyebrow">Continue reading</span><h2>Next 4 stories · October 8–12</h2></div><strong>11 feature stories shown on this page</strong></div><div class="home-more-grid"><a href="why-jujutsu-kaisen-pulls-us-in.html"><time>Oct. 12</time><b>Why <i>Jujutsu Kaisen</i> pulls us in.</b><span>Anime · Culture</span></a><a href="oda-nobunaga-guns-city.html"><time>Oct. 11</time><b>The warlord, the guns and the city.</b><span>History · Places</span></a><a href="best-time-to-visit-japan.html"><time>Oct. 9</time><b>The best time to visit Japan depends on what you want.</b><span>Travel · Seasons</span></a><a href="fuji.html"><time>Oct. 8</time><b>Mount Fuji is more than the perfect view.</b><span>Places · Culture</span></a></div></section>');
+  }
+
+  installSiteSearch();
+  addHomepageArchiveStories();
 
   const dragonBallVisual = 'https://en.dragon-ball-official.com/dragonball/en/news/2026/09/02/%E8%B6%85%E9%96%8B%E5%B9%95%E3%83%88%E3%83%AC%E3%83%BC%E3%83%A9%E3%83%BCEN%E8%A8%98%E4%BA%8B_%E3%82%B5%E3%83%A0%E3%83%8D%E3%82%A4%E3%83%AB%E6%A1%88.jpg';
 
