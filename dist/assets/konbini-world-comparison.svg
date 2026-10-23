@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 720" role="img" aria-labelledby="title desc">
+  <title id="title">How convenience stores differ across Japan, the United States, the United Kingdom and Taiwan</title>
+  <desc id="desc">An editorial comparison showing the primary role, common location, service emphasis and 2025 store count for four convenience-store markets.</desc>
+  <rect width="1200" height="720" rx="32" fill="#f5efe3"/>
+  <text x="72" y="82" fill="#17251f" font-family="Georgia,serif" font-size="48" font-weight="700">One name, four different jobs</text>
+  <text x="74" y="120" fill="#59675f" font-family="Arial,sans-serif" font-size="19">Editorial diagram · national markets overlap; these are dominant patterns, not rules</text>
+  <g font-family="Arial,sans-serif">
+    <g transform="translate(72 164)">
+      <rect width="246" height="466" rx="24" fill="#193b33"/>
+      <text x="24" y="52" fill="#f3c95b" font-size="17" font-weight="700" letter-spacing="2">JAPAN</text>
+      <text x="24" y="100" fill="white" font-family="Georgia,serif" font-size="30" font-weight="700">Time hub</text>
+      <path d="M24 126h198" stroke="#557168"/>
+      <text x="24" y="166" fill="white" font-size="16" font-weight="700">Typical setting</text><text x="24" y="194" fill="#d7e3de" font-size="15">stations, neighborhoods,</text><text x="24" y="217" fill="#d7e3de" font-size="15">office districts</text>
+      <text x="24" y="262" fill="white" font-size="16" font-weight="700">What it bundles</text><text x="24" y="290" fill="#d7e3de" font-size="15">fresh meals, bills, ATM,</text><text x="24" y="313" fill="#d7e3de" font-size="15">printing, parcels, tickets</text>
+      <text x="24" y="367" fill="#f3c95b" font-size="42" font-family="Georgia,serif" font-weight="700">56,054</text><text x="24" y="394" fill="#d7e3de" font-size="14">JFA member-chain stores</text><text x="24" y="416" fill="#d7e3de" font-size="14">at end of 2025</text>
+    </g>
+    <g transform="translate(342 164)">
+      <rect width="246" height="466" rx="24" fill="#b94638"/>
+      <text x="24" y="52" fill="#fff3cf" font-size="17" font-weight="700" letter-spacing="2">UNITED STATES</text>
+      <text x="24" y="100" fill="white" font-family="Georgia,serif" font-size="30" font-weight="700">Road hub</text>
+      <path d="M24 126h198" stroke="#d4867e"/>
+      <text x="24" y="166" fill="white" font-size="16" font-weight="700">Typical setting</text><text x="24" y="194" fill="#fff0eb" font-size="15">forecourts, highways,</text><text x="24" y="217" fill="#fff0eb" font-size="15">car-oriented corridors</text>
+      <text x="24" y="262" fill="white" font-size="16" font-weight="700">What it bundles</text><text x="24" y="290" fill="#fff0eb" font-size="15">fuel, drinks, snacks,</text><text x="24" y="313" fill="#fff0eb" font-size="15">growing foodservice</text>
+      <text x="24" y="367" fill="#fff3cf" font-size="42" font-family="Georgia,serif" font-weight="700">151,975</text><text x="24" y="394" fill="#fff0eb" font-size="14">stores at end of 2025;</text><text x="24" y="416" fill="#fff0eb" font-size="14">80.7% sold fuel</text>
+    </g>
+    <g transform="translate(612 164)">
+      <rect width="246" height="466" rx="24" fill="#294b70"/>
+      <text x="24" y="52" fill="#f3c95b" font-size="17" font-weight="700" letter-spacing="2">UNITED KINGDOM</text>
+      <text x="24" y="100" fill="white" font-family="Georgia,serif" font-size="30" font-weight="700">Local hub</text>
+      <path d="M24 126h198" stroke="#6782a0"/>
+      <text x="24" y="166" fill="white" font-size="16" font-weight="700">Typical setting</text><text x="24" y="194" fill="#e4edf5" font-size="15">high streets, villages,</text><text x="24" y="217" fill="#e4edf5" font-size="15">residential communities</text>
+      <text x="24" y="262" fill="white" font-size="16" font-weight="700">What it bundles</text><text x="24" y="290" fill="#e4edf5" font-size="15">top-up groceries, post,</text><text x="24" y="313" fill="#e4edf5" font-size="15">community relationships</text>
+      <text x="24" y="367" fill="#f3c95b" font-size="42" font-family="Georgia,serif" font-weight="700">50,486</text><text x="24" y="394" fill="#e4edf5" font-size="14">mainland stores in 2025;</text><text x="24" y="416" fill="#e4edf5" font-size="14">71% independent</text>
+    </g>
+    <g transform="translate(882 164)">
+      <rect width="246" height="466" rx="24" fill="#cc7938"/>
+      <text x="24" y="52" fill="#17251f" font-size="17" font-weight="700" letter-spacing="2">TAIWAN</text>
+      <text x="24" y="100" fill="#17251f" font-family="Georgia,serif" font-size="30" font-weight="700">Life hub</text>
+      <path d="M24 126h198" stroke="#e8af7f"/>
+      <text x="24" y="166" fill="#17251f" font-size="16" font-weight="700">Typical setting</text><text x="24" y="194" fill="#382a20" font-size="15">dense city blocks and</text><text x="24" y="217" fill="#382a20" font-size="15">township centers</text>
+      <text x="24" y="262" fill="#17251f" font-size="16" font-weight="700">What it bundles</text><text x="24" y="290" fill="#382a20" font-size="15">meals, payments, pickup,</text><text x="24" y="313" fill="#382a20" font-size="15">seating and digital services</text>
+      <text x="24" y="367" fill="#17251f" font-size="42" font-family="Georgia,serif" font-weight="700">7,200+</text><text x="24" y="394" fill="#382a20" font-size="14">7-Eleven stores alone</text><text x="24" y="416" fill="#382a20" font-size="14">in 2025</text>
+    </g>
+  </g>
+  <text x="72" y="675" fill="#59675f" font-family="Arial,sans-serif" font-size="15">Sources: JFA, NACS, ACS Local Shop Report 2025, PCSC 2025 Annual Report. Counts are not directly comparable because definitions differ.</text>
+</svg>
