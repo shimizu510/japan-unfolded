@@ -67,6 +67,14 @@
   const endpoint = 'https://firestore.googleapis.com/v1/projects/poketquest-3a73d/databases/(default)/documents/publicSiteStatus/tiktokLive';
   const defaultLiveURL = 'https://www.tiktok.com/@yuji.shimizu2/live';
   const liveLinks = 'a[href*="tiktok.com/@yuji.shimizu2"]';
+  const visitEndpoint = 'https://us-central1-poketquest-3a73d.cloudfunctions.net/trackPublicSiteVisit';
+
+  function recordVisit() {
+    if (/^(localhost|127\.0\.0\.1)$/.test(location.hostname)) return;
+    const payload = JSON.stringify({ site: 'japan-unfolded' });
+    if (navigator.sendBeacon) navigator.sendBeacon(visitEndpoint, new Blob([payload], { type: 'application/json' }));
+    else fetch(visitEndpoint, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: payload, keepalive: true }).catch(function () {});
+  }
 
   function renderLive(isLive, liveURL) {
     document.documentElement.classList.toggle('yuji-is-live', isLive);
@@ -121,6 +129,7 @@
     }
   }
 
+  recordVisit();
   addMangaPracticeLink();
   refreshLiveStatus();
   setInterval(refreshLiveStatus, 45000);
