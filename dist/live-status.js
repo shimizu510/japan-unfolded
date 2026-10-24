@@ -11,6 +11,10 @@
   comments.src = siteRoot + '/comments.js?v=2';
   comments.defer = true;
   document.head.appendChild(comments);
+  const mangaSwitcher = document.createElement('script');
+  mangaSwitcher.src = assetRoot + '/manga-switcher.js?v=1';
+  mangaSwitcher.defer = true;
+  document.head.appendChild(mangaSwitcher);
 
   function installSiteSearch() {
     const header = document.querySelector('header');
