@@ -103,8 +103,8 @@
     if (!intro || intro.querySelector('.manga-study-link')) return;
     const link = document.createElement('a');
     link.className = 'manga-study-link';
-    link.href = 'https://shimizu510.github.io/japanese-training-lab/learn/n3/manga/';
-    link.textContent = 'Practice Japanese with an original N3 manga ↗';
+    link.href = 'https://shimizu510.github.io/japanese-training-lab/learn/n5/grammar-reading/';
+    link.textContent = 'Practice the Japanese in this N5 manga ↗';
     link.style.cssText = 'display:inline-flex;margin-top:12px;padding:11px 16px;border-radius:999px;background:#ef4c3b;color:#fff;font-weight:900';
     const note = document.createElement('small');
     note.textContent = 'Free · No signup · Continue in DraMap';
