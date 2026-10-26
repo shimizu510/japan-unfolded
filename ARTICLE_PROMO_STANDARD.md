@@ -5,6 +5,8 @@ Every new culture article must include the existing desktop `yuji-rail` and mobi
 - TikTok: **Watch LIVE Japan with Yuji**
 - DraMap: **Learn Japanese while playing**
 
+Language and culture explainers must not treat `tatemae`/`honne`, indirectness, `uchi`/`soto`, or similar concepts as personality traits shared by every Japanese person. Distinguish dictionary meaning, observed speech patterns, individual variation, power, and the safety-critical situations where explicit language is required. Original diagrams must be labeled as editorial diagrams; historical and museum images need visible creator, source, and license credits.
+
 When an article naturally introduces Japanese words, manga language, signs, conversation, or study, add one contextual link to **Japanese Training Lab** (`https://shimizu510.github.io/japanese-training-lab/`). Describe it accurately as free web practice with no signup required. Do not force the link into unrelated paragraphs or replace the required DraMap and TikTok actions.
 
 Use the production URLs already present in the site. The desktop card must remain visible while the reader scrolls. The mobile bar must remain compact and must not obscure article text. It must always show Yuji's portrait plus both actions—`LIVE Japan` and `Learn Japanese`—including on phones 520px wide or narrower. Never hide the DraMap action to make the bar fit. Use safe-area-aware bottom spacing so the bar does not cover article text, links, embedded video controls, or the iPhone home indicator. Do not publish a new article without Yuji's face and both promises.
