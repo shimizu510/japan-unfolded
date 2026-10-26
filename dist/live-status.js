@@ -110,7 +110,7 @@
     const link = document.createElement('a');
     link.className = 'manga-study-link';
     link.href = foundation
-      ? 'https://shimizu510.github.io/japanese-training-lab/learn/grammar-reading/'
+      ? 'https://shimizu510.github.io/japanese-training-lab/learn/foundation/manga/?view=manga'
       : 'https://shimizu510.github.io/japanese-training-lab/learn/n5/manga/?view=manga';
     link.textContent = foundation
       ? 'Practice the foundation Japanese in this manga ↗'
