@@ -8,11 +8,11 @@
   searchStyles.rel = 'stylesheet';
   searchStyles.href = assetRoot + '/search.css?v=1';
   document.head.appendChild(searchStyles);
-  comments.src = siteRoot + '/comments.js?v=2';
+  comments.src = assetRoot + '/comments.js?v=3';
   comments.defer = true;
   document.head.appendChild(comments);
   const mangaSwitcher = document.createElement('script');
-  mangaSwitcher.src = assetRoot + '/manga-switcher.js?v=1';
+  mangaSwitcher.src = assetRoot + '/manga-switcher.js?v=3';
   mangaSwitcher.defer = true;
   document.head.appendChild(mangaSwitcher);
 
@@ -106,15 +106,18 @@
     const intro = document.querySelector('.manga-showcase-head > div');
     if (!intro || intro.querySelector('.manga-study-link')) return;
     const showcase = intro.closest('[data-manga-switcher]');
-    const foundation = showcase && showcase.dataset.mangaStudyLevel === 'foundation';
+    const level = showcase && showcase.dataset.mangaStudyLevel
+      ? showcase.dataset.mangaStudyLevel.toLowerCase()
+      : 'n5';
+    const foundation = level === 'foundation';
     const link = document.createElement('a');
     link.className = 'manga-study-link';
     link.href = foundation
       ? 'https://shimizu510.github.io/japanese-training-lab/learn/foundation/manga/?view=manga'
-      : 'https://shimizu510.github.io/japanese-training-lab/learn/n5/manga/?view=manga';
+      : 'https://shimizu510.github.io/japanese-training-lab/learn/' + level + '/manga/?view=manga';
     link.textContent = foundation
       ? 'Practice the foundation Japanese in this manga ↗'
-      : 'Practice the Japanese in this N5 manga ↗';
+      : 'Practice the Japanese in this ' + level.toUpperCase() + ' manga ↗';
     link.style.cssText = 'display:inline-flex;margin-top:12px;padding:11px 16px;border-radius:999px;background:#ef4c3b;color:#fff;font-weight:900';
     const note = document.createElement('small');
     note.textContent = 'Free · No signup · Continue in DraMap';

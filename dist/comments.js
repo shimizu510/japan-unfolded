@@ -1,5 +1,14 @@
 (function () {
   'use strict';
+
+  if (window.__japanUnfoldedComments) return;
+  window.__japanUnfoldedComments = true;
+
+  if (document.body.classList.contains('tatemae-page')) {
+    var mangaScript = document.createElement('script');
+    mangaScript.src = 'manga-switcher.js?v=3';
+    document.head.appendChild(mangaScript);
+  }
   const article = document.querySelector('main .article, main.article > article');
   if (!article) return;
 
