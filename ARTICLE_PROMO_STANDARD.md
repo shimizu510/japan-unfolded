@@ -2,6 +2,8 @@
 
 Every new culture article must include the existing desktop `yuji-rail` and mobile `mobile-brand-bar`, with Yuji's portrait and these two promises:
 
+Character-culture features must use official embeds, clearly licensed documentary photos, simple identification marks where legally appropriate, or original non-imitative editorial diagrams. Never generate substitutes that imitate protected characters. Separate official character facts from the publication's cultural interpretation.
+
 - TikTok: **Watch LIVE Japan with Yuji**
 - DraMap: **Learn Japanese while playing**
 
