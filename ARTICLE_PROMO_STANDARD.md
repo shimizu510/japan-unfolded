@@ -4,6 +4,8 @@ Every new culture article must include the existing desktop `yuji-rail` and mobi
 
 Character-culture features must use official embeds, clearly licensed documentary photos, simple identification marks where legally appropriate, or original non-imitative editorial diagrams. Never generate substitutes that imitate protected characters. Separate official character facts from the publication's cultural interpretation.
 
+When a bilingual manga is added, show the English edition first at the top of its feature article and on the homepage's newest-manga block. Place an immediately visible language switch beside the heading. The Japanese button must name its actual study level in the form `日本語 · JLPT N5` (or the verified level). The homepage manga and its primary action must link to the matching feature article; the article prose begins below the manga.
+
 - TikTok: **Watch LIVE Japan with Yuji**
 - DraMap: **Learn Japanese while playing**
 
