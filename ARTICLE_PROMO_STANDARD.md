@@ -2,6 +2,8 @@
 
 Every new culture article must include the existing desktop `yuji-rail` and mobile `mobile-brand-bar`, with Yuji's portrait and these two promises:
 
+Destination guides must explain how history still shapes the visitor experience, provide a practical route, name realistic costs or constraints where relevant, and date-check operational details. Use multiple actual destination photographs with visible author, source, license, and modification credits; do not substitute generic Japan imagery.
+
 Character-culture features must use official embeds, clearly licensed documentary photos, simple identification marks where legally appropriate, or original non-imitative editorial diagrams. Never generate substitutes that imitate protected characters. Separate official character facts from the publication's cultural interpretation.
 
 When a bilingual manga is added, show the English edition first at the top of its feature article and on the homepage's newest-manga block. Place an immediately visible language switch beside the heading. The Japanese button must name its actual study level in the form `日本語 · JLPT N5` (or the verified level). The homepage manga and its primary action must link to the matching feature article; the article prose begins below the manga.
