@@ -1,3 +1,13 @@
 @media (min-width:801px) and (max-height:820px){
   .unfolded-home .cat-home-hero .hero-copy{padding-bottom:90px}
 }
+.cat-latest-manga{padding-top:38px}
+.cat-latest-manga + .cat-home-hero{padding-top:64px}
+.cat-article-manga{max-width:840px;margin:38px auto 60px}
+.cat-article-manga + .cat-story-hero{padding-top:10px}
+@media (max-width:700px){
+  .cat-latest-manga{padding-top:28px}
+  .cat-latest-manga + .cat-home-hero{padding-top:42px}
+  .cat-article-manga{margin:24px -8px 60px}
+  .cat-article-manga + .cat-story-hero{padding-top:8px}
+}
