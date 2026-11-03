@@ -4,6 +4,8 @@ Every new culture article must include the existing desktop `yuji-rail` and mobi
 
 Everyday-life and school features must distinguish a widespread pattern from a universal rule. Name differences by municipality, school type, age, and campus where relevant; explain the educational or social system behind the visible custom; and include practical limits, safety concerns, or current reform debates instead of presenting a ritual as proof of a national personality.
 
+Features about children travelling independently must distinguish walking to a local public school from longer private or national-school trips by train. Treat “alone” as travel without a personal escort, not evidence of travel without support. Verify current survey data and describe route practice, group commuting, school rules, transport staff, volunteers, traffic risk, weather, disability and family variation. Never encourage readers to follow or photograph identifiable children.
+
 Destination guides must explain how history still shapes the visitor experience, provide a practical route, name realistic costs or constraints where relevant, and date-check operational details. Use multiple actual destination photographs with visible author, source, license, and modification credits; do not substitute generic Japan imagery.
 
 Character-culture features must use official embeds, clearly licensed documentary photos, simple identification marks where legally appropriate, or original non-imitative editorial diagrams. Never generate substitutes that imitate protected characters. Separate official character facts from the publication's cultural interpretation.
