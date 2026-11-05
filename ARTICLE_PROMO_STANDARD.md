@@ -18,6 +18,8 @@ When a bilingual manga is added, show the English edition first at the top of it
 
 For the Hanako-san school-ghost feature, the bilingual six-panel manga uses `English` first and `日本語 · JLPT N2` as the study option. It must remain the first editorial content on `hanako-san-japans-school-bathroom-ghost.html`, with the complete English feature beginning immediately below it. While it is the newest manga, the homepage must show its bilingual switcher before the Hanako-san story hero; both the manga image and primary action link to the feature page.
 
+For the Kuchisake-onna feature, the bilingual six-panel manga uses `English` first and `日本語 · JLPT N1` as the study option. It must remain the first editorial content on `kuchisake-onna-am-i-beautiful.html`, with the complete English feature beginning immediately below it. While it is the newest manga, the homepage must show its bilingual switcher before the Kuchisake-onna story hero; both the manga image and primary action link to the feature page.
+
 For the Tama cat-stationmaster feature, the bilingual manga uses `English` first and `日本語 · JLPT N2` as the study option. Its six-panel reading instruction must remain visible, the homepage image and primary action link to `the-cat-who-became-a-stationmaster.html`, and the complete feature begins immediately below the manga on the article page.
 
 - TikTok: **Watch LIVE Japan with Yuji**
