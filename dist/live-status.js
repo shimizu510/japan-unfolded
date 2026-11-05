@@ -46,7 +46,7 @@
 
   function showOfficialDragonBallVisual() {
     const isArticle = location.pathname.endsWith('/dragon-ball-beerus-world-japan-built.html');
-    const isHome = /\/japan-unfolded\/(?:index\.html)?$/.test(location.pathname);
+    const isHome = /\/japan-unfolded\/(?:index\.html)?$/.test(location.pathname) && document.querySelector('.hero:first-of-type')?.classList.contains('dragon-ball-home');
     if (!isArticle && !isHome) return;
     const image = document.querySelector(isArticle ? '.story-hero-figure img' : '.hero-media img');
     if (!image) return;
