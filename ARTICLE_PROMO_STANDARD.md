@@ -4,6 +4,8 @@ Every new culture article must include the existing desktop `yuji-rail` and mobi
 
 Folklore and urban-legend features must separate the earliest documented variant from later retellings, adaptations and speculative origin stories. Do not identify an unverified real victim, turn a school into a visitor attraction, or encourage trespass, restroom filming, or reenactments around children. Treat variant details as evidence of transmission rather than errors; original visuals must be non-imitative and clearly labeled editorial artwork.
 
+For Teke Teke, do not present the Hokkaido railway death, Kashima Reiko identity, named victim, exact station, or a single gender as established origin facts without contemporary documentation. Preserve differences among school, mirror, road and railway variants; treat the onomatopoeic name, upper-body movement and pursuit as a recurring core rather than forcing every half-bodied apparition into one biography.
+
 For confrontation legends such as Kuchisake-onna, present purported escape answers as story variants—not real-world safety instructions. Do not approach, photograph, follow, or stage scares involving strangers. Distinguish the late-1970s documentary trail from later samurai, surgery and victim biographies, and do not describe a modern rumor as an authenticated ancient legend.
 
 Everyday-life and school features must distinguish a widespread pattern from a universal rule. Name differences by municipality, school type, age, and campus where relevant; explain the educational or social system behind the visible custom; and include practical limits, safety concerns, or current reform debates instead of presenting a ritual as proof of a national personality.
@@ -23,6 +25,8 @@ For the Kuchisake-onna feature, the bilingual six-panel manga uses `English` fir
 For the unusual-hotels feature, the bilingual six-panel manga uses `English` first and `日本語 · JLPT N5前` as the absolute-beginner study option. It must remain the first editorial content on `japans-strangest-hotels.html`, with the complete English feature beginning immediately below it. While it is the newest manga, the homepage must show its bilingual switcher before the unusual-hotels story hero; both the manga image and primary action link to the feature page.
 
 For the Tama cat-stationmaster feature, the bilingual manga uses `English` first and `日本語 · JLPT N2` as the study option. Its six-panel reading instruction must remain visible, the homepage image and primary action link to `the-cat-who-became-a-stationmaster.html`, and the complete feature begins immediately below the manga on the article page.
+
+For the women-warriors feature, the bilingual six-panel manga uses `English` first and `日本語 · JLPT N2` as the study option. It must remain the first editorial content on `women-warriors-female-samurai.html`; the complete historical feature begins immediately below it. While it is the newest manga, the homepage switcher, manga image and primary action must link to that feature page.
 
 - TikTok: **Watch LIVE Japan with Yuji**
 - DraMap: **Learn Japanese while playing**

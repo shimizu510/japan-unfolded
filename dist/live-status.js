@@ -113,8 +113,8 @@
     const link = document.createElement('a');
     link.className = 'manga-study-link';
     link.href = foundation
-      ? 'https://shimizu510.github.io/japanese-training-lab/learn/foundation/manga/?view=manga'
-      : 'https://shimizu510.github.io/japanese-training-lab/learn/' + level + '/manga/?view=manga';
+      ? 'https://shimizu510.github.io/japanese-training-lab/learn/foundation/manga/?view=manga#manga-reader'
+      : 'https://shimizu510.github.io/japanese-training-lab/learn/' + level + '/manga/?view=manga#manga-reader';
     link.textContent = foundation
       ? 'Practice the foundation Japanese in this manga ↗'
       : 'Practice the Japanese in this ' + level.toUpperCase() + ' manga ↗';
