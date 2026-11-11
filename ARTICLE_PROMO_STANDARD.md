@@ -6,6 +6,8 @@ Folklore and urban-legend features must separate the earliest documented variant
 
 For Teke Teke, do not present the Hokkaido railway death, Kashima Reiko identity, named victim, exact station, or a single gender as established origin facts without contemporary documentation. Preserve differences among school, mirror, road and railway variants; treat the onomatopoeic name, upper-body movement and pursuit as a recurring core rather than forcing every half-bodied apparition into one biography.
 
+For the Teke Teke feature, the bilingual six-panel action manga uses `English` first and `日本語 · JLPT N1` as the study option. It must remain the first editorial content on `teke-teke-japans-sound-made-monster.html`, with the complete feature beginning immediately below it. While it is the newest manga, the homepage must show its bilingual switcher before the Teke Teke story hero; both the manga image and primary action link to the feature page.
+
 For confrontation legends such as Kuchisake-onna, present purported escape answers as story variants—not real-world safety instructions. Do not approach, photograph, follow, or stage scares involving strangers. Distinguish the late-1970s documentary trail from later samurai, surgery and victim biographies, and do not describe a modern rumor as an authenticated ancient legend.
 
 Everyday-life and school features must distinguish a widespread pattern from a universal rule. Name differences by municipality, school type, age, and campus where relevant; explain the educational or social system behind the visible custom; and include practical limits, safety concerns, or current reform debates instead of presenting a ritual as proof of a national personality.
