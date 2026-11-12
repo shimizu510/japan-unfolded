@@ -5,13 +5,19 @@
   window.__japanUnfoldedMangaSwitcher = true;
 
   function mangaMarkup(config) {
-    return '<section class="article-manga" aria-labelledby="' + config.id + '" data-manga-switcher><div class="article-manga-head"><div><span class="eyebrow">Read the manga first</span><h2 id="' + config.id + '">' + config.title + '</h2><p>Choose English or practise the same story in JLPT ' + config.level + ' Japanese.</p></div><div class="manga-language" role="group" aria-label="Choose manga language"><button class="is-active" type="button" data-manga-language="en" aria-pressed="true">English</button><button type="button" data-manga-language="ja" aria-pressed="false" lang="ja">日本語 · JLPT ' + config.level + '</button></div></div><figure class="manga-sheet"><img data-manga-image src="' + config.english + '" data-english="' + config.english + '" data-japanese="' + config.japanese + '" data-english-alt="' + config.englishAlt + '" data-japanese-alt="' + config.japaneseAlt + '" alt="' + config.englishAlt + '" width="1024" height="1536" fetchpriority="high"><figcaption data-manga-caption data-english="English edition · Start at the top right and follow panels 1–8." data-japanese="日本語版（JLPT ' + config.level + 'レベル）・右上の①から番号の順に読んでください。">English edition · Start at the top right and follow panels 1–8.</figcaption></figure></section>';
+    return '<section class="article-manga ' + (config.className || '') + '" aria-labelledby="' + config.id + '" data-manga-switcher><div class="article-manga-head"><div><span class="eyebrow">Read the manga first</span><h2 id="' + config.id + '">' + config.title + '</h2><p>Choose English or practise the same story in JLPT ' + config.level + ' Japanese.</p></div><div class="manga-language" role="group" aria-label="Choose manga language"><button class="is-active" type="button" data-manga-language="en" aria-pressed="true">English</button><button type="button" data-manga-language="ja" aria-pressed="false" lang="ja">日本語 · JLPT ' + config.level + '</button></div></div><figure class="manga-sheet"><img data-manga-image src="' + config.english + '" data-english="' + config.english + '" data-japanese="' + config.japanese + '" data-english-alt="' + config.englishAlt + '" data-japanese-alt="' + config.japaneseAlt + '" alt="' + config.englishAlt + '" width="1024" height="1536" fetchpriority="high"><figcaption data-manga-caption data-english="English edition · Start in the upper right and follow the numbered reading guide." data-japanese="日本語版（JLPT ' + config.level + 'レベル）・右上から番号の順に読んでください。">English edition · Start in the upper right and follow the numbered reading guide.</figcaption></figure></section>';
   }
 
   var articleHero = document.querySelector('.article-hero');
   if (articleHero && !document.querySelector('[data-manga-switcher]')) {
     var isTatemae = document.body.classList.contains('tatemae-page');
-    var config = isTatemae ? {
+    var isRamen = document.body.classList.contains('ramen-page');
+    var config = isRamen ? {
+      id: 'ramen-manga-title', className: 'ramen-article-manga', title: 'Five minutes. One unfamiliar machine.', level: 'N2',
+      english: 'assets/ramen-system-manga-english.png', japanese: 'assets/ramen-system-manga-n2.png',
+      englishAlt: 'English color manga about entering a Japanese ramen shop, featuring TikToker YUJI at Japan',
+      japaneseAlt: '日本のラーメン店での体験を描いたTikToker YUJI at JapanのJLPT N2日本語カラー漫画'
+    } : isTatemae ? {
       id: 'tatemae-manga-title', title: 'Tatemae and honne—one silence, two truths.', level: 'N1',
       english: 'assets/tatemae-honne-manga-english.png', japanese: 'assets/tatemae-honne-n1-manga-v2.png',
       englishAlt: 'English manga about tatemae and honne featuring TikToker YUJI at Japan',
@@ -22,7 +28,7 @@
       englishAlt: 'English manga about the hidden system behind Japan’s toilets, featuring TikToker YUJI at Japan',
       japaneseAlt: '日本のトイレを支える仕組みを紹介するTikToker YUJI at JapanのN4日本語漫画'
     } : null;
-    if (config) articleHero.insertAdjacentHTML(isTatemae ? 'beforebegin' : 'afterend', mangaMarkup(config));
+    if (config) articleHero.insertAdjacentHTML(isTatemae || isRamen ? 'beforebegin' : 'afterend', mangaMarkup(config));
   }
 
   document.querySelectorAll('[data-manga-switcher]').forEach(function (switcher) {

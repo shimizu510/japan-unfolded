@@ -1,6 +1,12 @@
 (function () {
   'use strict';
 
+  if (document.body.classList.contains('ramen-page') && !document.querySelector('script[src^="manga-switcher.js"]')) {
+    var mangaScript = document.createElement('script');
+    mangaScript.src = 'manga-switcher.js?v=5';
+    document.head.appendChild(mangaScript);
+  }
+
   if (window.__japanUnfoldedComments) return;
   window.__japanUnfoldedComments = true;
 
