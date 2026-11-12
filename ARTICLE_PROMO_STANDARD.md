@@ -2,6 +2,8 @@
 
 Every new culture article must include the existing desktop `yuji-rail` and mobile `mobile-brand-bar`, with Yuji's portrait and these two promises:
 
+Food-culture features must distinguish a widespread pattern from a universal rule, identify regional or shop-specific systems, explain the practical workflow behind visible etiquette, and include dietary, allergy, accessibility, queueing and payment limits. Never turn optional slurping, finishing soup, returning a bowl or specialist ordering vocabulary into a test of cultural worth. Actual food and shop photographs require visible creator, source, license and modification credits.
+
 Folklore and urban-legend features must separate the earliest documented variant from later retellings, adaptations and speculative origin stories. Do not identify an unverified real victim, turn a school into a visitor attraction, or encourage trespass, restroom filming, or reenactments around children. Treat variant details as evidence of transmission rather than errors; original visuals must be non-imitative and clearly labeled editorial artwork.
 
 For Teke Teke, do not present the Hokkaido railway death, Kashima Reiko identity, named victim, exact station, or a single gender as established origin facts without contemporary documentation. Preserve differences among school, mirror, road and railway variants; treat the onomatopoeic name, upper-body movement and pursuit as a recurring core rather than forcing every half-bodied apparition into one biography.
