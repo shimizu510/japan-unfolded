@@ -2,6 +2,8 @@
 
 Every new culture article must include the existing desktop `yuji-rail` and mobile `mobile-brand-bar`, with Yuji's portrait and these two promises:
 
+Creature-inspiration features must grade claims as documented creator testimony, strong comparison, or editorial interpretation. Official Pokédex categories describe the fictional taxonomy and must not be presented as zoological diagnoses. Do not turn visual similarity or fan etymology into a confirmed design origin. Use licensed real-animal photography, official text links, and original non-imitative diagrams; never generate or redraw protected characters as substitutes for official art.
+
 Food-culture features must distinguish a widespread pattern from a universal rule, identify regional or shop-specific systems, explain the practical workflow behind visible etiquette, and include dietary, allergy, accessibility, queueing and payment limits. Never turn optional slurping, finishing soup, returning a bowl or specialist ordering vocabulary into a test of cultural worth. Actual food and shop photographs require visible creator, source, license and modification credits.
 
 Capsule-toy features must distinguish generic capsule toys from company trademarks such as Bandai's Gashapon and Takara Tomy Arts' Gacha. Date and define market figures, machine counts, prices, product availability and recycling claims. Explain random selection, duplicates, spending limits and plastic waste rather than presenting repeated pulls as harmless. Product examples require official archives; article photography requires a visible author, source, license and modification credit.
