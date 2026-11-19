@@ -1,6 +1,8 @@
 .sushi-home-hero .hero-copy::before{content:"鮨"}
 .sushi-home-hero .stamp{background:#f4d06f;color:#17201a}
+.sushi-latest-manga{padding-top:38px}.sushi-latest-manga+.sushi-home-hero{padding-top:64px}.sushi-article-manga{max-width:900px;margin:38px auto 60px}.sushi-article-manga+main .article-hero{padding-top:10px}
 @media(max-width:600px){
+  .sushi-latest-manga{padding-top:28px}.sushi-latest-manga+.sushi-home-hero{padding-top:42px}.sushi-article-manga{margin-top:24px;margin-bottom:42px}.sushi-article-manga+main .article-hero{padding-top:8px}
   .sushi-home-hero .hero-copy{min-height:500px;padding:28px 26px}
   .sushi-home-hero .hero-copy h1{font-size:3rem;line-height:.88;margin:12px 0 18px}
   .sushi-home-hero .hero-copy p{font-size:.93rem;line-height:1.48;margin:.2rem 0}
