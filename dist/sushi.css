@@ -1,0 +1,7 @@
+.sushi-home-hero .hero-copy::before{content:"鮨"}
+.sushi-home-hero .stamp{background:#f4d06f;color:#17201a}
+@media(max-width:600px){
+  .sushi-home-hero .hero-copy{min-height:500px;padding:28px 26px}
+  .sushi-home-hero .hero-copy h1{font-size:3rem;line-height:.88;margin:12px 0 18px}
+  .sushi-home-hero .hero-copy p{font-size:.93rem;line-height:1.48;margin:.2rem 0}
+}
