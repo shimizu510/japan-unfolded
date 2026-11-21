@@ -31,6 +31,11 @@
     if (config) articleHero.insertAdjacentHTML(isTatemae || isRamen ? 'beforebegin' : 'afterend', mangaMarkup(config));
   }
 
+  var hellManga = document.querySelector('.hell-article-manga');
+  if (hellManga && !hellManga.querySelector('.manga-practice-link')) {
+    hellManga.insertAdjacentHTML('beforeend', '<p class="manga-practice-link"><a class="button" href="https://shimizu510.github.io/japanese-training-lab/learn/n1/manga/?view=manga&amp;story=hell-scroll#manga-reader">Practice the Japanese in this N1 manga →</a></p>');
+  }
+
   document.querySelectorAll('[data-manga-switcher]').forEach(function (switcher) {
     var image = switcher.querySelector('[data-manga-image]');
     var caption = switcher.querySelector('[data-manga-caption]');
