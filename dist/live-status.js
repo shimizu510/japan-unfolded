@@ -39,8 +39,19 @@
     grid.insertAdjacentHTML('afterend','<section class="home-more-stories"><div class="home-more-heading"><div><span class="eyebrow">Continue reading</span><h2>Next 4 stories · October 8–12</h2></div><strong>11 feature stories shown on this page</strong></div><div class="home-more-grid"><a href="why-jujutsu-kaisen-pulls-us-in.html"><time>Oct. 12</time><b>Why <i>Jujutsu Kaisen</i> pulls us in.</b><span>Anime · Culture</span></a><a href="oda-nobunaga-guns-city.html"><time>Oct. 11</time><b>The warlord, the guns and the city.</b><span>History · Places</span></a><a href="best-time-to-visit-japan.html"><time>Oct. 9</time><b>The best time to visit Japan depends on what you want.</b><span>Travel · Seasons</span></a><a href="fuji.html"><time>Oct. 8</time><b>Mount Fuji is more than the perfect view.</b><span>Places · Culture</span></a></div></section>');
   }
 
+  function installTrainingLabReturn() {
+    if (document.querySelector('.training-lab-return')) return;
+    const link = document.createElement('a');
+    link.className = 'training-lab-return';
+    link.href = 'https://shimizu510.github.io/japanese-training-lab/';
+    link.setAttribute('aria-label', 'Return to Japanese Training Lab and start a free Japanese lesson');
+    link.innerHTML = '<b aria-hidden="true">あ</b><span><small>FREE JAPANESE LESSONS</small><strong>Learn Japanese</strong></span><i aria-hidden="true">↗</i>';
+    document.body.appendChild(link);
+  }
+
   installSiteSearch();
   addHomepageArchiveStories();
+  installTrainingLabReturn();
 
   const dragonBallVisual = 'https://en.dragon-ball-official.com/dragonball/en/news/2026/09/02/%E8%B6%85%E9%96%8B%E5%B9%95%E3%83%88%E3%83%AC%E3%83%BC%E3%83%A9%E3%83%BCEN%E8%A8%98%E4%BA%8B_%E3%82%B5%E3%83%A0%E3%83%8D%E3%82%A4%E3%83%AB%E6%A1%88.jpg';
 
