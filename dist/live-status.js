@@ -155,39 +155,39 @@
 
   const categoryCatalog = {
     manga: { label: 'MANGA & ANIME', title: 'Enter Japan through stories.', image: 'assets/manga-editorial.jpg', stories: [
-      ['Manga culture', 'Why Jujutsu Kaisen pulls us in', 'why-jujutsu-kaisen-pulls-us-in.html'],
-      ['Anime worlds', 'The Japan that built Beerus’s world', 'dragon-ball-beerus-world-japan-built.html'],
-      ['Manga first', 'Browse every Japan Unfolded manga', 'manga.html']
+      ['Manga culture', 'Why Jujutsu Kaisen pulls us in', 'why-jujutsu-kaisen-pulls-us-in.html', 'assets/jjk-cosplay-ccby.jpg', 'Jujutsu Kaisen cosplay photo: Stéphane Gallay, CC BY 2.0', 'https://commons.wikimedia.org/wiki/File:Japan_Impact_2022_-_Cosplay_groupes_(52334019959).jpg', 'https://creativecommons.org/licenses/by/2.0/'],
+      ['Anime worlds', 'The Japan that built Beerus’s world', 'dragon-ball-beerus-world-japan-built.html', 'assets/beerus-cosplay-ccby-sa.jpg', 'Beerus cosplay photo: William Tung, CC BY-SA 2.0', 'https://commons.wikimedia.org/wiki/File:Beerus_Cosplayer_at_the_2018_Comic-Con_International.jpg', 'https://creativecommons.org/licenses/by-sa/2.0/'],
+      ['Manga first', 'Browse every Japan Unfolded manga', 'manga.html', 'assets/old-wells-ghost-stories-manga-english.png']
     ]},
     games: { label: 'GAMES & POP CULTURE', title: 'See the real Japan behind play.', image: 'assets/pokemon-japanese-squirrel.jpg', stories: [
-      ['Games & nature', 'The real creatures behind Pokémon', 'real-creatures-behind-pokemon.html'],
-      ['Akihabara', 'One tiny part unlocks Akihabara', 'akihabara-guide.html'],
-      ['Capsule culture', 'Japan’s craziest capsule toys', 'japans-craziest-capsule-toys.html']
+      ['Games & nature', 'The real creatures behind Pokémon', 'real-creatures-behind-pokemon.html', 'assets/pokemon-japanese-squirrel.jpg'],
+      ['Akihabara', 'One tiny part unlocks Akihabara', 'akihabara-guide.html', 'assets/akihabara-radio-center.jpg'],
+      ['Capsule culture', 'Japan’s craziest capsule toys', 'japans-craziest-capsule-toys.html', 'assets/capsule-toy-microscope.jpg']
     ]},
     people: { label: 'LIFE & CONNECTION', title: 'Understand how people live and connect.', image: 'assets/japan-school-commute-walking.jpg', stories: [
-      ['Everyday Japan', 'Why Japanese children commute alone', 'why-japanese-children-commute-alone.html'],
-      ['Social language', 'What tatemae and honne really mean', 'what-are-tatemae-and-honne.html'],
-      ['People & place', 'The cat who became a stationmaster', 'the-cat-who-became-a-stationmaster.html']
+      ['Everyday Japan', 'Why Japanese children commute alone', 'why-japanese-children-commute-alone.html', 'assets/japan-school-commute-walking.jpg'],
+      ['Social language', 'What tatemae and honne really mean', 'what-are-tatemae-and-honne.html', 'assets/honne-tatemae-noh-mask.jpg'],
+      ['People & place', 'The cat who became a stationmaster', 'the-cat-who-became-a-stationmaster.html', 'assets/tama-stationmaster.jpg']
     ]},
     work: { label: 'WORK & SOCIETY', title: 'Read the culture behind working in Japan.', image: 'assets/honne-tatemae-noh-mask.jpg', stories: [
-      ['Work in Japan', 'Japan jobs: pay, popularity and the world', 'japan-jobs-pay-popularity-world.html'],
-      ['Communication', 'What tatemae and honne really mean', 'what-are-tatemae-and-honne.html'],
-      ['Small society', 'Five surprising facts about Japanese school life', 'japanese-school-life-surprising-facts.html']
+      ['Work in Japan', 'Japan jobs: pay, popularity and the world', 'japan-jobs-pay-popularity-world.html', 'assets/yuji-city.jpg'],
+      ['Communication', 'What tatemae and honne really mean', 'what-are-tatemae-and-honne.html', 'assets/honne-tatemae-noh-mask.jpg'],
+      ['Small society', 'Five surprising facts about Japanese school life', 'japanese-school-life-surprising-facts.html', 'assets/japanese-school-cleaning.jpg']
     ]},
-    folklore: { label: 'FOLKLORE & YOKAI', title: 'Step into Japan’s mysteries.', image: 'assets/old-wells-ghost-stories-hero.jpg', stories: [
-      ['Ghost stories', 'Why old wells became doors for ghosts', 'old-wells-ghost-stories-japan.html'],
-      ['Urban legend', 'Aka Manto: red or blue?', 'aka-manto-red-or-blue.html'],
-      ['Urban legend', 'Kuchisake-onna: Am I beautiful?', 'kuchisake-onna-am-i-beautiful.html']
+    folklore: { label: 'FOLKLORE & YOKAI', title: 'Step into Japan’s mysteries.', image: 'assets/category-folklore-original.jpg', stories: [
+      ['Ghost stories', 'Why old wells became doors for ghosts', 'old-wells-ghost-stories-japan.html', 'assets/old-well-day-night-editorial.jpg'],
+      ['Urban legend', 'Aka Manto: red or blue?', 'aka-manto-red-or-blue.html', 'assets/aka-manto-audience-choice-editorial.jpg'],
+      ['Urban legend', 'Kuchisake-onna: Am I beautiful?', 'kuchisake-onna-am-i-beautiful.html', 'assets/kuchisake-onna-editorial.svg']
     ]},
-    food: { label: 'FOOD & TRADITIONS', title: 'Taste the history inside everyday Japan.', image: 'assets/sushi-nigiri-hero.jpg', stories: [
-      ['Food history', 'Sushi wasn’t always like this', 'sushi-wasnt-always-like-this.html'],
-      ['Ramen culture', 'Why ramen shops feel like a system', 'why-japan-ramen-shops-feel-like-a-system.html'],
-      ['Daily life', 'Why Japanese convenience stores feel different', 'japan-konbini-convenience-stores.html']
+    food: { label: 'FOOD & TRADITIONS', title: 'Taste the history inside everyday Japan.', image: 'assets/category-food-original.jpg', stories: [
+      ['Food history', 'Sushi wasn’t always like this', 'sushi-wasnt-always-like-this.html', 'assets/sushi-funazushi.jpg'],
+      ['Ramen culture', 'Why ramen shops feel like a system', 'why-japan-ramen-shops-feel-like-a-system.html', 'assets/ramen-ticket-machine.jpg'],
+      ['Daily life', 'Why Japanese convenience stores feel different', 'japan-konbini-convenience-stores.html', 'assets/konbini-tokyo-outdoor.jpg']
     ]},
-    travel: { label: 'TRAVEL & PLACES', title: 'Find the Japan you want to see.', image: 'assets/top5-fuji.jpg', stories: [
-      ['Mount Fuji', 'Mount Fuji from every side', 'mount-fuji-every-side.html'],
-      ['First journey', 'Japan’s top five places', 'japan-top-5-places.html'],
-      ['Travel guide', 'Five things to know before your first trip', 'first-trip-japan-5-things.html']
+    travel: { label: 'TRAVEL & PLACES', title: 'Find the Japan you want to see.', image: 'assets/category-travel-original.jpg', stories: [
+      ['Mount Fuji', 'Mount Fuji from every side', 'mount-fuji-every-side.html', 'assets/fuji-editorial.jpg'],
+      ['First journey', 'Japan’s top five places', 'japan-top-5-places.html', 'assets/top5-tokyo.jpg'],
+      ['Travel guide', 'Five things to know before your first trip', 'first-trip-japan-5-things.html', 'assets/japan-travel-reversal-editorial.svg']
     ]}
   };
 
@@ -198,6 +198,7 @@
     const title = results.querySelector('[data-category-title]');
     const kicker = results.querySelector('[data-category-kicker]');
     const grid = results.querySelector('[data-category-stories]');
+    const credits = results.querySelector('[data-category-credits]');
     const links = Array.from(gateway.querySelectorAll('[data-category-link]'));
 
     function selectCategory(key, shouldScroll) {
@@ -216,7 +217,7 @@
         link.className = 'category-story';
         link.href = story[2];
         const image = document.createElement('img');
-        image.src = category.image;
+        image.src = story[3] || category.image;
         image.alt = '';
         image.loading = 'lazy';
         const copy = document.createElement('span');
@@ -228,6 +229,21 @@
         link.append(image, copy);
         return link;
       }));
+      const creditedStories = category.stories.filter(function (story) { return story[4]; });
+      credits.replaceChildren.apply(credits, creditedStories.flatMap(function (story, index) {
+        const source = document.createElement('a');
+        source.href = story[5];
+        source.target = '_blank';
+        source.rel = 'noopener noreferrer';
+        source.textContent = story[4];
+        const license = document.createElement('a');
+        license.href = story[6];
+        license.target = '_blank';
+        license.rel = 'noopener noreferrer';
+        license.textContent = 'license';
+        return index ? [document.createTextNode(' · '), source, document.createTextNode(' ('), license, document.createTextNode(')')] : [source, document.createTextNode(' ('), license, document.createTextNode(')')];
+      }));
+      credits.hidden = !creditedStories.length;
       results.hidden = false;
       const url = new URL(location.href);
       url.searchParams.set('category', key);
