@@ -175,6 +175,7 @@
       ['Small society', 'Five surprising facts about Japanese school life', 'japanese-school-life-surprising-facts.html', 'assets/japanese-school-cleaning.jpg']
     ]},
     folklore: { label: 'FOLKLORE & YOKAI', title: 'Step into Japan’s mysteries.', image: 'assets/category-folklore-original.jpg', stories: [
+      ['Art & afterlife', 'How Ancient Japan Imagined Hell', 'how-ancient-japan-imagined-hell.html', 'assets/japanese-hell-scroll-hero.jpg'],
       ['Ghost stories', 'Why old wells became doors for ghosts', 'old-wells-ghost-stories-japan.html', 'assets/old-well-day-night-editorial.jpg'],
       ['Urban legend', 'Aka Manto: red or blue?', 'aka-manto-red-or-blue.html', 'assets/aka-manto-audience-choice-editorial.jpg'],
       ['Urban legend', 'Kuchisake-onna: Am I beautiful?', 'kuchisake-onna-am-i-beautiful.html', 'assets/kuchisake-onna-editorial.svg']
