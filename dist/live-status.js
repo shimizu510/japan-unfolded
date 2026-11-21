@@ -153,8 +153,111 @@
     }
   }
 
+  const categoryCatalog = {
+    manga: { label: 'MANGA & ANIME', title: 'Enter Japan through stories.', image: 'assets/manga-editorial.jpg', stories: [
+      ['Manga culture', 'Why Jujutsu Kaisen pulls us in', 'why-jujutsu-kaisen-pulls-us-in.html'],
+      ['Anime worlds', 'The Japan that built Beerus’s world', 'dragon-ball-beerus-world-japan-built.html'],
+      ['Manga first', 'Browse every Japan Unfolded manga', 'manga.html']
+    ]},
+    games: { label: 'GAMES & POP CULTURE', title: 'See the real Japan behind play.', image: 'assets/pokemon-japanese-squirrel.jpg', stories: [
+      ['Games & nature', 'The real creatures behind Pokémon', 'real-creatures-behind-pokemon.html'],
+      ['Akihabara', 'One tiny part unlocks Akihabara', 'akihabara-guide.html'],
+      ['Capsule culture', 'Japan’s craziest capsule toys', 'japans-craziest-capsule-toys.html']
+    ]},
+    people: { label: 'LIFE & CONNECTION', title: 'Understand how people live and connect.', image: 'assets/japan-school-commute-walking.jpg', stories: [
+      ['Everyday Japan', 'Why Japanese children commute alone', 'why-japanese-children-commute-alone.html'],
+      ['Social language', 'What tatemae and honne really mean', 'what-are-tatemae-and-honne.html'],
+      ['People & place', 'The cat who became a stationmaster', 'the-cat-who-became-a-stationmaster.html']
+    ]},
+    work: { label: 'WORK & SOCIETY', title: 'Read the culture behind working in Japan.', image: 'assets/honne-tatemae-noh-mask.jpg', stories: [
+      ['Work in Japan', 'Japan jobs: pay, popularity and the world', 'japan-jobs-pay-popularity-world.html'],
+      ['Communication', 'What tatemae and honne really mean', 'what-are-tatemae-and-honne.html'],
+      ['Small society', 'Five surprising facts about Japanese school life', 'japanese-school-life-surprising-facts.html']
+    ]},
+    folklore: { label: 'FOLKLORE & YOKAI', title: 'Step into Japan’s mysteries.', image: 'assets/old-wells-ghost-stories-hero.jpg', stories: [
+      ['Ghost stories', 'Why old wells became doors for ghosts', 'old-wells-ghost-stories-japan.html'],
+      ['Urban legend', 'Aka Manto: red or blue?', 'aka-manto-red-or-blue.html'],
+      ['Urban legend', 'Kuchisake-onna: Am I beautiful?', 'kuchisake-onna-am-i-beautiful.html']
+    ]},
+    food: { label: 'FOOD & TRADITIONS', title: 'Taste the history inside everyday Japan.', image: 'assets/sushi-nigiri-hero.jpg', stories: [
+      ['Food history', 'Sushi wasn’t always like this', 'sushi-wasnt-always-like-this.html'],
+      ['Ramen culture', 'Why ramen shops feel like a system', 'why-japan-ramen-shops-feel-like-a-system.html'],
+      ['Daily life', 'Why Japanese convenience stores feel different', 'japan-konbini-convenience-stores.html']
+    ]},
+    travel: { label: 'TRAVEL & PLACES', title: 'Find the Japan you want to see.', image: 'assets/top5-fuji.jpg', stories: [
+      ['Mount Fuji', 'Mount Fuji from every side', 'mount-fuji-every-side.html'],
+      ['First journey', 'Japan’s top five places', 'japan-top-5-places.html'],
+      ['Travel guide', 'Five things to know before your first trip', 'first-trip-japan-5-things.html']
+    ]}
+  };
+
+  function installCategoryGateway() {
+    const gateway = document.querySelector('.category-gateway');
+    if (!gateway) return;
+    const results = gateway.querySelector('#category-results');
+    const title = results.querySelector('[data-category-title]');
+    const kicker = results.querySelector('[data-category-kicker]');
+    const grid = results.querySelector('[data-category-stories]');
+    const links = Array.from(gateway.querySelectorAll('[data-category-link]'));
+
+    function selectCategory(key, shouldScroll) {
+      const category = categoryCatalog[key];
+      if (!category) return;
+      links.forEach(function (link) {
+        const active = link.dataset.categoryLink === key;
+        link.classList.toggle('is-active', active);
+        if (active) link.setAttribute('aria-current', 'true');
+        else link.removeAttribute('aria-current');
+      });
+      kicker.textContent = category.label;
+      title.textContent = category.title;
+      grid.replaceChildren.apply(grid, category.stories.map(function (story) {
+        const link = document.createElement('a');
+        link.className = 'category-story';
+        link.href = story[2];
+        const image = document.createElement('img');
+        image.src = category.image;
+        image.alt = '';
+        image.loading = 'lazy';
+        const copy = document.createElement('span');
+        const tag = document.createElement('small');
+        tag.textContent = story[0];
+        const name = document.createElement('strong');
+        name.textContent = story[1];
+        copy.append(tag, name);
+        link.append(image, copy);
+        return link;
+      }));
+      results.hidden = false;
+      const url = new URL(location.href);
+      url.searchParams.set('category', key);
+      url.hash = 'category-results';
+      history.replaceState(null, '', url);
+      if (shouldScroll) results.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+
+    links.forEach(function (link) {
+      link.addEventListener('click', function (event) {
+        event.preventDefault();
+        selectCategory(link.dataset.categoryLink, true);
+      });
+    });
+    results.querySelector('[data-category-close]').addEventListener('click', function () {
+      results.hidden = true;
+      links.forEach(function (link) { link.classList.remove('is-active'); link.removeAttribute('aria-current'); });
+      const url = new URL(location.href);
+      url.searchParams.delete('category');
+      url.hash = '';
+      history.replaceState(null, '', url);
+      gateway.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    });
+    const initial = new URLSearchParams(location.search).get('category');
+    if (categoryCatalog[initial]) selectCategory(initial, location.hash === '#category-results');
+  }
+
   recordVisit();
   addMangaPracticeLink();
+  installCategoryGateway();
   refreshLiveStatus();
   setInterval(refreshLiveStatus, 45000);
   document.addEventListener('visibilitychange', function () {
